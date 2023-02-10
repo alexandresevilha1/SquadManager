@@ -6,10 +6,10 @@
 
         <h1>Authentication</h1>
 
-    <form action="/Login/Test" method="post">
+    <form>
        
-        <input type="text" name="email" value="@Model.Email"  placeholder="Username/Email"/>
-        <input type="password" name="password" value="@Model.Password" placeholder="Password"/>
+        <input type="text" id="email" name="email" value="@Model.Email"  placeholder="Username/Email"/>
+        <input type="password" required id="password" name="password" value="@Model.Password" placeholder="Password" />
         <a href="#">Forgot password?</a>
 
         <button type="submit">Login</button>
@@ -19,3 +19,7 @@
     <label>Don't have an account? <a href="#">Create here</a></label> 
 
 </div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/login.js"></script>
+
